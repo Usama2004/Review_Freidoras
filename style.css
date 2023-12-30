@@ -242,3 +242,89 @@ footer .copyright {
         width: 26%;
     }
 }
+
+@media (max-width: 800px) {
+    .freidora-1 {
+        height: 60vh;
+    }
+
+    .botones {
+        margin-top: 2%;
+        flex-direction: column;
+    }
+
+    .botones a {
+        display: flex;
+        justify-content: center;
+        margin: 1% 0;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .img-2 {
+        width: 30%;
+    }
+
+    .img-4 {
+        width: 35%;
+    }
+}
+
+@media (max-width: 506px) {
+    .freidora-1 {
+        height: 65vh;
+    }
+}
+
+@media (max-width: 430px) {
+    .freidora-1 {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 382px) {
+    .boton {
+        width: 150px;
+    }
+    
+    .freidora-1 {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 338px) {
+    .freidora-1 {
+        width: 80%;
+    }
+
+    .introduccion {
+        width: 80%;
+    }
+    
+    .freidora-1 {
+        height: 85vh;
+    }
+
+    header {
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 220px) {
+    .freidora-1 {
+        width: 90%;
+    }
+
+    .introduccion {
+        width: 90%;
+    }
+
+    .boton {
+        width: 125px;
+    }
+    
+    .freidora-1 {
+        height: 100vh;
+    }
+}
