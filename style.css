@@ -21,6 +21,11 @@ header {
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
                 -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
     margin-bottom: 1%;
+    padding: 2.5%;
+}
+
+header p {
+    text-align: center;
 }
 
 main {
@@ -72,12 +77,13 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: start;
 }
 
 .img-txt {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
+    /*align-items: flex-start;*/
     border-radius: 10px;
 }
 
@@ -119,7 +125,7 @@ main {
     border: 1px solid black;
 }
 
-.txt_freidora-1 p:first-child {
+.txt_freidora-1 p:last-child {
     margin: 2% 0% 2% 0%; 
 }
 
@@ -193,4 +199,46 @@ footer .links a:hover {
 footer .copyright {
     color: #6c757d;
     font-size: 14px;
+}
+
+@media (max-width: 1090px) {
+    .introduccion {
+        flex-direction: column-reverse;
+    }        
+
+    .introduccion p {
+        margin-top: 2%;
+    }
+
+    .introduccion img {
+        width: 30%;
+    }
+
+    .freidora-1 {
+        height: 52.5vh;
+    }
+
+    .img-txt {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-1 {
+        width: 23%;
+    } 
+    
+    .img-2 {
+        width: 24%;
+        margin-top: 1.35%;
+    }
+    
+    .img-3 {
+        width: 18.5%;
+    }
+
+    .img-4 {
+        width: 26%;
+    }
 }
