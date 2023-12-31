@@ -21,6 +21,7 @@ header {
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
                 -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
     margin-bottom: 1%;
+    padding: 2.5%;
 }
 
 header p {
@@ -28,6 +29,7 @@ header p {
 }
 
 main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +56,7 @@ main {
 }
 
 .img-txt img {
-    width: 35%;
+    width: 34%;
     max-width: 500px;
     margin-top: 2%;
 }
@@ -94,7 +96,7 @@ main {
 }
 
 table {
-    width: 100%;
+    table-layout: fixed;
     margin-top: 2%;
     border-collapse: collapse;
     width: 80%;
@@ -107,6 +109,8 @@ table, th, td {
     border: 1px solid #ddd;
     padding: 15px;
     text-align: left;
+    overflow: auto; /* Añade barras de desplazamiento si es necesario */
+    word-wrap: break-word; /* Permite que las palabras se rompan y pasen a la siguiente línea */
 }
 
 th {
@@ -143,5 +147,30 @@ footer .links a:hover {
 footer .copyright {
     color: #6c757d;
     font-size: 14px;
+}
+
+@media (max-width: 850px) {
+    .img-txt {
+        flex-direction: column;
+    }
+
+    .text-f1 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 300px) {
+    .amazon-button button {
+        font-size: 12.5px;
+        padding: 0;
+        width: 60vw;
+        height: 5vh;
+    }
 }
 
